@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pariwisata</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pics/kapal laut.jpg">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+    <div class="mobile">
+    <div id="logo">
+    <a href="index.html"><img src="pics/kapal laut.jpg" alt="logo sekolah" class="img-head">OneIndo</a>
+    </div>
+        
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+    </button>
+    </div>
+    
+    <nav id="navbar">
+
+        <ul>
+            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg></button></li>
+            <li class="logoli"><a href="index.html"><img src="pics/kapal laut.jpg" alt="logo sekolah" class="img-head">OneIndo</a></li>
+            <li><a class="active-link" aria-current="page" href="index.html">Destinasi</a></li>
+            <li><a href="#">Acara</a></li>
+            <li><a href="#">Panduan</a></li>
+            <li><a href="#">Rencanakan Perjalanan</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <section class="penyambut">
+        <img src="pics/Raja Ampat.jpg" alt="raja ampat" class="img-slide active">
+        <img src="pics/alamindo2.jpg" alt="raja ampat" class="img-slide">
+        <img src="pics/Gunung bromo.jpg" alt="raja ampat" class="img-slide">
+
+        <div class="isi-penyambut">
+            <h1>OneIndo</h1>
+            <p>Jelajahi Keindahan Indonesia</p>
+        </div>
+        <div class="slider-nav">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <main>
+        <section class="sec1">
+            <h1>selamat datang di indonesia</h1>
+            <h2>Dikenal sebagai negara kepulauan terbesar di dunia, Indonesia memiliki lebih dari 17.000 pulau yang kaya akan budaya, alam, dan keanekaragaman.</h2>
+        </section>
+
+        <section class="sec2">
+        <div class="sec2-atas">
+        <div class="img-box">
+            <img src="pics/pulau seribu2.jpg" alt="pulau seribu" class="image-sec2">
+        </div>
+
+        <div class="text-box">
+            <p>
+            Sebagai negara kepulauan terbesar di dunia, Indonesia merupakan surga bagi para wisatawan yang ingin menjelajahi keindahan alam, kekayaan budaya, dan keragaman tradisi yang mempesona. Dari Sabang hingga Merauke, setiap daerah menyimpan pesona unik yang mencerminkan jati diri bangsa yang beragam namun tetap satu.
+            </p>
+
+            <p>
+            Indonesia dikenal dengan keindahan alamnya yang luar biasa, mulai dari pantai berpasir putih di Bali, hutan tropis di Kalimantan, gunung berapi megah di Jawa, hingga danau-danau indah di Sumatra dan Sulawesi. Keanekaragaman hayati yang dimiliki Indonesia menjadikannya salah satu negara dengan destinasi ekowisata terbaik di dunia.
+            </p>
+
+            <div class="caption">
+            ENJOY <span>INDONESIA!</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="sec2-bawah">
+            <div class="text-box">
+            <p>
+            Selain keindahan alam, budaya Indonesia juga menjadi daya tarik utama. Setiap provinsi memiliki bahasa daerah, adat istiadat, seni, dan kuliner khas yang berbeda-beda. Dari batik Yogyakarta, tari Kecak Bali, hingga upacara adat Toraja — semuanya memperlihatkan betapa kaya dan berwarnanya kebudayaan Nusantara.
+            </p>
+
+            <p>
+            Tidak hanya itu, keramahan masyarakat Indonesia juga menjadi alasan mengapa banyak wisatawan mancanegara betah berlama-lama di sini. Warga lokal yang ramah dan penuh senyum selalu siap menyambut dengan tangan terbuka, memberikan pengalaman perjalanan yang tak terlupakan.
+            </p>
+
+            <p>
+            Berwisata di Indonesia berarti menikmati keseimbangan antara keindahan alam dan kehidupan modern. Infrastruktur pariwisata yang semakin berkembang — mulai dari bandara, penginapan, hingga transportasi antarpulau — membuat perjalanan ke berbagai destinasi menjadi lebih mudah dan menyenangkan.
+            </p>
+
+            <p id="sec2-bawah-highlight">Temukan sendiri pengalaman menarik mu di Indonesia dan Enjoy Indonesia! </p>
+        </div>
+        </section>
+
+        <section class="sec3">
+            <div class="sec3-judul">
+            <h1>Destinasi terfavorit</h1>
+            <p>Temukan Destinasi Yang Paling Menarik Untuk Mu!</p>
+            </div>
+            <div class="cards">
+                <div class="card" data-link="#">
+                    <img src="pics/bali.jpg" alt="Bali">
+                    <div class="overlay"></div>
+                    <p>Bali</p>
+                    </a>
+                </div>
+                <div class="card" data-link="#">
+                    <img src="pics/jogja.jpg" alt="Yogyakarta">
+                    <div class="overlay"></div>
+                    <p>Yogyakarta</p>
+                </div>
+                <div class="card" data-link="#">
+                    <img src="pics/labuan bajo.jpg" alt="Labuan Bajo">
+                    <div class="overlay"></div>
+                    <p>Labuan Bajo</p>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer>
+        <p>&copy; 2025 All rights reserved by OneIndo</p>
+    </footer>
+</body>
+</html>
