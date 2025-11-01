@@ -71,3 +71,24 @@ cards.forEach(card => {
     }, 300)
   })
 })
+
+// Efek ubah background navbar saat melewati section "penyambut"
+window.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  const hero = document.querySelector(".penyambut"); // section di atas main
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          header.classList.add("scrolled"); // keluar dari penyambut
+        } else {
+          header.classList.remove("scrolled"); // masih di penyambut
+        }
+      });
+    },
+    { threshold: 0.3 } // ubah jadi 0.5 kalau mau lebih lambat efeknya
+  );
+
+  if (hero) observer.observe(hero);
+});
