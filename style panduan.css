@@ -248,6 +248,15 @@ nav a{
     .footer-bottom {
         text-align: left;
     }
+    .sec-terms {
+    padding: 100px 6%;
+    }
+    .sec-terms h1 {
+        font-size: 2em;
+    }
+    .sec-terms h2 {
+        font-size: 1.2em;
+    }
 }
 .footer {
     background: var(--greentua);
@@ -340,7 +349,7 @@ nav a{
     padding: 100px 200px;
     text-align: center;
     position: relative;
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -352,8 +361,8 @@ nav a{
     position: absolute;
     inset: 0;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
     );
     z-index: 1;
 }
@@ -389,8 +398,40 @@ nav a{
     height: 100%;
     object-fit: cover;
 }
+.welcome {
+    text-align: center;
+    font-family: "bold";
+    background-color: var(--yellowterang);
+}
+.welcome h2 {
+  color: black;
+  font-size: 1.5rem;
+  font-family: "basic";
+}
+.welcome h1 {
+  font-size: 3rem;
+  color: var(--orange);
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+}
+.welcome h1::before,
+.welcome h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: #333;
+}
+.welcome h1::before {
+  left: 30px;
+}
+.welcome h1::after {
+  right: 30px;
+}
 .sec-terms {
-  background: var(--greenmuda);
+  background: var(--yellow);
   color: #111;
   padding: 120px 10%;
   font-family: "basic", sans-serif;
@@ -403,13 +444,7 @@ nav a{
   margin-bottom: 25px;
   border-bottom: 2px solid #e5e5e5;
   padding-bottom: 10px;
-}
-.sec-terms h2 {
-  font-family: "bold";
-  font-size: 1.4em;
-  color: #222;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  text-align: center;
 }
 .sec-terms p {
   margin-bottom: 16px;
@@ -426,31 +461,4 @@ nav a{
 }
 .sec-terms li {
   margin-bottom: 10px;
-}
-.sec-terms .terms-footer {
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 40px;
-  text-align: right;
-  font-style: italic;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-}
-@media (max-width: 800px) {
-  .sec-terms {
-    padding: 100px 6%;
-  }
-  .sec-terms h1 {
-    font-size: 2em;
-  }
-  .sec-terms h2 {
-    font-size: 1.2em;
-  }
-}
-#langkaloka{
-    color: var(--orange);
-}
-#body-tentang{
-    min-height: 200vh;
-    line-height: 1.6;
 }

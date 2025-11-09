@@ -62,7 +62,7 @@ header a {
   transition: all 0.4s ease;
 }
 .img-head{
-    width: 48px;
+    width: 120px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -74,6 +74,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
+    height: 14%;
     z-index: 999;
     display: flex;
     justify-content: space-between;
@@ -102,7 +103,7 @@ nav ul li a {
     color: #fff;
     font-family: "basic";
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     letter-spacing: 0.3px;
     padding: 8px 12px;
     border-radius: 6px;
@@ -134,7 +135,7 @@ nav a.active-link{
     text-shadow: none;
 }
 .logoli{
-    margin-right: 225px;
+    margin-right: 320px;
 }
 #open-sidebar-button{
     display: none;
@@ -241,6 +242,19 @@ nav a.active-link{
         opacity: 60%;
         border-bottom: none;
     }
+    .footer {
+        padding: 40px 8%;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-left p {
+        max-width: 90%;
+    }
+    .footer-bottom {
+        text-align: left;
+    }
 }
 .penyambut{
     padding: 100px 200px;
@@ -272,6 +286,7 @@ nav a.active-link{
     font-weight: 900;
     letter-spacing: 5px;
     line-height: 75px;
+    margin-bottom: 10px;
     position: relative;
 }
 .penyambut .isi-penyambut:hover{
@@ -465,21 +480,98 @@ nav a.active-link{
     z-index: 2;
 }
 .card:hover {
-  transform: translateY(-8px);
+    transform: translateY(-8px);
 }
-
 .card:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
-
 .card:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
-footer{
+.footer {
     background: var(--greentua);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 0px;
+    color: #fff;
+    padding: 60px 10%;
+    font-family: "basic";
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.footer-left,
+.footer-center,
+.footer-legal,
+.footer-right {
+    flex: 1 1 220px;
+}
+.footer-logo {
+    width: 120px;
+    height: 125px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.footer-left h2 {
+    font-family: "bold";
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.footer-left p {
     font-size: 0.9em;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+}
+.footer-center h3,
+.footer-legal h3,
+.footer-right h3 {
+    font-family: "bold";
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.footer-center ul,
+.footer-legal ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+.footer-center a,
+.footer-legal a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.25s ease;
+}
+.footer-center a:hover,
+.footer-legal a:hover {
+    opacity: 60%;
+}
+.social-icons {
+    display: flex;
+    gap: 14px;
+    margin-top: 6px;
+}
+.img-social{
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 1.3em;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons a:hover {
+    transform: translateY(-4px);
+    color: var(--orangemuda);
+}
+.footer-bottom {
+    margin-top: 50px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #fff;
 }
