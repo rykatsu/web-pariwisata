@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pariwisata</title>
+    <link rel="stylesheet" type="text/css" href="style kuliner.css">
+    <link rel="icon" type="image/x-icon" href="pics/LangkaLoka_3x.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+    <div class="mobile">
+    <div id="logo">
+    <a href="index.html"><img src="pics/LangkaLoka_3x.png" alt="logo sekolah" class="img-head"></a>
+    </div>
+        
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+    </button>
+    </div>
+    
+    <nav id="navbar">
+
+        <ul>
+            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg></button></li>
+            <li class="logoli"><a href="index.html"><img src="pics/LangkaLoka_3x.png" alt="logo sekolah" class="img-head"></a></li>
+            <li><a class="active-link" aria-current="page" href="index.html">Destinasi</a></li>
+            <li><a href="Panduan.html">Panduan</a></li>
+            <li><a href="Transportasi.html">Transportasi</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <section class="penyambut">
+        <img src="pics/bali7.jpg" alt="raja ampat" class="img-slide active">
+
+        <div class="isi-penyambut">
+            <h1>Kuliner Bali</h1>
+        </div>
+    </section>
+
+    <main>
+
+        <section class="bali-section">
+            <h1 class="judul-bali">Top 3 Makanan Khas Labuan Bajo</h1>
+            <p class="subjudul-bali">Kuliner terbaik Labuan Bajo yang wajib kamu coba.</p>
+
+            <div class="bali-container">
+
+                <div class="bali-card">
+                    <img src="pics/Sambal Colo-Colo.jpg" alt="Sambal Colo-Colo">
+                    <h2>Ikan Bakar Sambal Colo-Colo</h2>
+                    <p>
+                        Karena Labuan Bajo adalah kota pelabuhan, hidangan utamanya adalah ikan laut segar (seperti Kakap Merah atau Krapu) yang dibakar. Ikon kuliner di sini adalah Sambal Colo-Colo, sambal khas Flores yang terbuat dari irisan tomat, cabai, bawang, dan air jeruk nipis, memberikan rasa segar, pedas, dan asam.
+                    </p>
+                </div>
+
+                <div class="bali-card">
+                    <img src="pics/Sup Ikan Kuah Kuning.jpg" alt="Sup Ikan Kuah Kuning">
+                    <h2>Sup Ikan Kuah Kuning</h2>
+                    <p>
+                        Sup yang menggunakan irisan ikan segar dengan kuah beraroma kunyit yang kuat, serai, dan rempah-rempah lain. Rasanya segar, asam, dan sedikit pedas, sangat cocok untuk menghangatkan badan setelah beraktivitas di laut.
+                    </p>
+                </div>
+
+                <div class="bali-card">
+                    <img src="pics/Seafood saus.jpg" alt="Seafood saus">
+                    <h2>Seafood Saus</h2>
+                    <p>
+                        Hampir semua warung makan di Labuan Bajo menyajikan berbagai jenis seafood segar yang dimasak dengan cepat, baik digoreng (crispy) maupun dimasak dengan saus pedas seperti Saus Padang atau Saus Mentega.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bali-section2">
+            <h1 class="judul-bali">Top 3 Restoran Khas Labuan Bajo</h1>
+            <p class="subjudul-bali">Restoran terbaik Labuan Bajo yang wajib kamu coba.</p>
+
+            <div class="bali-container">
+
+                <div class="bali-card">
+                    <img src="pics/kampung-ujung-labuan-bajo.jpeg" alt="kampung-ujung-labuan-bajo">
+                    <h2>Kampung Ujung Seafood</h2>
+                    <p>
+                        Pusat Kuliner Seafood Segar Harian. Lapak-lapak yang menjual ikan, cumi, dan udang yang baru ditangkap. Anda memilih bahan baku dan dimasak dengan sambal khas Colo-Colo. Merupakan tempat wajib coba untuk mencicipi hasil laut lokal.
+                    </p>
+                </div>
+
+                <div class="bali-card">
+                    <img src="pics/atlantis-on-the-rock.jpg" alt="Atlantis on the Rock">
+                    <h2>Atlantis on the Rock</h2>
+                    <p>
+                        Pengalaman Fine Dining dengan Pemandangan Laut. Menawarkan hidangan fusion (Indonesia dan Internasional) dengan suasana romantis. Tempat terbaik untuk menikmati sunset sambil menyantap hidangan mewah dengan latar belakang perairan Labuan Bajo.
+                    </p>
+                </div>
+
+                <div class="bali-card">
+                    <img src="pics/MadeInItaly Ristorante Italiano.jpg" alt="MadeInItaly Ristorante Italiano">
+                    <h2>MadeInItaly Ristorante Italiano</h2>
+                    <p>
+                        Restoran Italia Autentik dengan Sentuhan Lokal. Dikenal menyajikan hidangan Italia bintang lima seperti pizza dan pasta, dengan keunggulan menggunakan bahan-bahan lokal organik berkualitas, memberikan cita rasa internasional yang fresh.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <img src="pics/LangkaLoka_3x.png" alt="Logo" class="footer-logo">
+    </div>
+
+    <div class="footer-center">
+      <h3>Infomasi</h3>
+      <ul>
+        <li><a href="Tentang-kami.html">Tentang Kami</a></li>
+        <li><a href="Kontak.html">Hubungi kami</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-legal">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="syarat&ketentuan.html">Syarat & Ketentuan</a></li>
+        <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <h3>Ikuti Kami</h3>
+      <div class="social-icons">
+        <a href="#"><img class="img-social" alt="ig" src="pics/ig.png"></a>
+        <a href="#"><img class="img-social" alt="fb" src="pics/facebook.png"></a>
+        <a href="#"><img class="img-social" alt="tiktok" src="pics/tiktok.png"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 LangkaLoka. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

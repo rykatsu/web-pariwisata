@@ -72,22 +72,20 @@ cards.forEach(card => {
   })
 })
 
-// Efek ubah background navbar saat melewati section "penyambut"
 window.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
-  const hero = document.querySelector(".penyambut"); // section di atas main
-
+  const hero = document.querySelector(".penyambut");
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
-          header.classList.add("scrolled"); // keluar dari penyambut
+          header.classList.add("scrolled");
         } else {
-          header.classList.remove("scrolled"); // masih di penyambut
+          header.classList.remove("scrolled");
         }
       });
     },
-    { threshold: 0.3 } // ubah jadi 0.5 kalau mau lebih lambat efeknya
+    { threshold: 0.3 }
   );
 
   if (hero) observer.observe(hero);
